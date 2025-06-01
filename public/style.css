@@ -1,0 +1,217 @@
+/* Base styles */
+body {
+  background-color: #1d2b53;
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff1e8;
+  align-items: center;
+}
+
+/* Top header section */
+.top-section {
+  background: linear-gradient(145deg, #7e2553, #ab5236);
+  border-bottom: 4px solid #ffec27;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 100px;
+}
+
+.top-section h1 {
+  font-size: 2.5rem;
+  color: #ffec27;
+  text-shadow: 2px 2px #ff004d;
+  margin-top: 40px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #fff1e8;
+}
+
+/* Panels (sections) */
+.panel {
+  width: 100%;
+  max-width: 900px;
+  background: #7e2553;
+  border: 3px solid #ffec27;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 12px #ff004d, inset 0 0 5px #ffec27;
+}
+
+h2 {
+  color: #ffec27;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ff004d;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #1d2b53;
+  border: 2px solid #ffec27;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 10px #ffec27;
+  color: #fff1e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  background-color: #ff004d;
+  color: #ffec27;
+  border: 2px solid #ffec27;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 8px #ff004d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ab5236;
+  box-shadow: 0 0 12px #ffec27;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #fff1e8;
+}
+
+.timeline li {
+  margin-bottom: 10px;
+  border-left: 3px solid #ff004d;
+  padding-left: 15px;
+}
+
+/* Skills list */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background-color: #ff004d;
+  color: #ffec27;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  box-shadow: 0 0 8px #ff004d;
+}
+
+/* Contact form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 0.7rem;
+  color: #ffec27;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 2px solid #ffec27;
+  border-radius: 6px;
+  background-color: #1d2b53;
+  color: #fff1e8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffec27aa;
+}
+
+button[type="submit"] {
+  width: fit-content;
+  align-self: center;
+  padding: 12px 30px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9rem;
+  background-color: #ff004d;
+  border: 3px solid #ffec27;
+  color: #ffec27;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 12px #ff004d;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ab5236;
+  box-shadow: 0 0 16px #ffec27;
+}
+
+.contact-info {
+  font-size: 0.75rem;
+  margin-top: 25px;
+  text-align: center;
+  color: #ffec27;
+}
+
+.contact-info a {
+  color: #ff004d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(145deg, #7e2553, #ab5236);
+  color: #ffec27;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  width: 100%;
+  border-top: 4px solid #ffec27;
+  margin-top: auto;
+}
