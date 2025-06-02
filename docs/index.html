@@ -109,8 +109,28 @@
       </ul>
     </section>
 
+    <section id="snake-game" class="panel">
+      <h2>8-Bit Snake!</h2>
+      <canvas id="gameBoard" width="500" height="500"></canvas>
+      <div class="score-container">
+        <div>
+          <h3>Current Score</h3>
+          <div id="scoreText">0</div>
+        </div>
+        <div>
+          <h3>Highest Score</h3>
+          <div id="highScoreText">0</div>
+        </div>
+        <div>
+          <h3>Total Plays</h3>
+          <div id="howManyPlayed">0</div>
+        </div>
+      </div>
+      <button id="resetBtn">Play / Reset</button>
+    </section>
+
     <section id="contact" class="panel">
-      <h2>Contact Me!</h2>
+      <h2 id="contact">Contact Me!</h2>
       <form>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
@@ -134,12 +154,6 @@
         💻 GitHub:
         <a href="https://github.com/alexanderduya">github.com/alexanderduya</a>
       </p>
-    </section>
-
-    <section id="snake-game" class="panel">
-      <canvas id="gameBoard" width="500" height="500"></canvas>
-      <div id="scoreText">0</div>
-      <button id="resetBtn">Play / Reset</button>
     </section>
 
     <footer>💻 Developed by Alexander Duya — Press Start 2P retro style</footer>

@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
 const scoreText = document.querySelector("#scoreText");
+const totalPlayed = document.querySelector("#howManyPlayed");
+const highScoreText = document.querySelector("#highScoreText");
 const resetBtn = document.querySelector("#resetBtn");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
@@ -71,14 +73,19 @@ let snake = [
   { x: 0, y: 0 },
 ];
 let gameLoop;
+let totalPlays = 0;
+let highScore = 0;
 
 //event listener to listen to key events
 window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click", resetGame);
 
 function gameStart() {
+  totalPlays += 1;
   running = true;
   scoreText.textContent = score;
+  totalPlayed.textContent = totalPlays;
+  highScoreText.textContent = highScore;
   createFood();
   drawFood();
   nextTick();
@@ -124,6 +131,11 @@ function moveSnake() {
     //if food is eaten
     score += 1;
     scoreText.textContent = score;
+
+    if (score > highScore) {
+      highScore = score;
+      document.getElementById("highScoreText").textContent = highScore;
+    }
     createFood();
   } else {
     snake.pop();
@@ -215,5 +227,6 @@ function resetGame() {
     { x: unitSize, y: 0 },
     { x: 0, y: 0 },
   ];
+
   gameStart();
 }
