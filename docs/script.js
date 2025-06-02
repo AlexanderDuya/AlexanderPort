@@ -6,7 +6,7 @@ function showModal(title, description, link) {
         <span class="modal-close">&times;</span>
         <h3>${title}</h3>
         <p>${description}</p>
-        <a href="${link}" target="_blank" class="btn small">View Full Project</a>
+        <a href="${link}" class="btn small">View Full Project</a>
       </div>
     `;
 
