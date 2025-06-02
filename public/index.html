@@ -19,50 +19,78 @@
     </header>
 
     <section id="about" class="panel">
-      <h2>Player Profile</h2>
+      <h2>About Me</h2>
       <p>
-        I’m Alexander Duya, a software engineer with a passion for AI and web
-        development. Currently interning at BAE Systems and studying Computer
-        Science at Kingston University.
+        I’m Alexander Duya, a Software Engineer Intern at BAE Systems. Currently
+        learning TypeScript, and developing my technical skills to build a
+        strong foundation in software engineering.
       </p>
     </section>
 
     <section id="projects" class="panel">
       <h2>Projects</h2>
-      <div class="projects-grid">
+      <div class="projects-grid" id="main-projects">
         <article class="project-card">
           <h3>Project One</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <a href="#" class="btn small">View Code</a>
+          <p>Short description here.</p>
+          <a
+            href="#"
+            class="btn small"
+            data-title="Project One"
+            data-description="This is the full description of Project One."
+            >View Project</a
+          >
         </article>
         <article class="project-card">
           <h3>Project Two</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <a href="#" class="btn small">View Code</a>
+          <p>Another brief overview.</p>
+          <a
+            href="#"
+            class="btn small"
+            data-title="Project Two"
+            data-description="Detailed info about Project Two goes here."
+            >View Project</a
+          >
         </article>
-        <!-- Add more projects here -->
+      </div>
+
+      <div class="projects-grid hidden" id="extra-projects">
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>Description of Project Three.</p>
+          <a
+            href="#"
+            class="btn small"
+            data-title="Project Three"
+            data-description="More details about Project Three."
+            >View Project</a
+          >
+        </article>
+        <article class="project-card">
+          <h3>Project Four</h3>
+          <p>Description of Project Four.</p>
+          <a
+            href="#"
+            class="btn small"
+            data-title="Project Four"
+            data-description="More details about Project Four."
+            >View Project</a
+          >
+        </article>
+      </div>
+
+      <div class="btn-container">
+        <button id="view-more-btn" class="btn">View More Projects</button>
       </div>
     </section>
 
     <section id="experience" class="panel">
       <h2>Levels Completed</h2>
       <ul class="timeline">
-        <li><strong>BAE Systems</strong> — Software Engineer Intern</li>
-        <li><strong>CSE</strong> — Software Developer Intern</li>
+        <li>
+          <strong>BAE Systems</strong> — Software Engineer Intern (Current)
+        </li>
+        <li><strong>CSE</strong> — React Developer Intern</li>
         <li><strong>Adclear.ai</strong> — Software Developer Intern</li>
         <li>
           <strong>Kingston University</strong> — Academic Mentor & Student
@@ -74,15 +102,15 @@
       <h2>Power-Ups</h2>
       <ul class="skills-list">
         <li>JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>AI & Machine Learning</li>
+        <li>Java</li>
+        <li>React (Native and Expo)</li>
+        <li>SQL</li>
+        <li>TypeScript</li>
       </ul>
     </section>
 
     <section id="contact" class="panel">
-      <h2>Insert Coin to Continue</h2>
+      <h2>Contact Me!</h2>
       <form>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
@@ -97,24 +125,18 @@
       </form>
       <p class="contact-info">
         📧 Email:
-        <a href="mailto:alexander@example.com">alexander@example.com</a><br />
+        <a href="mailto:alexduyaconnect@gmail.com">alexduyaconnect@gmail.com</a
+        ><br />
         🔗 LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/alexanderduya/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/in/alexanderduya/"
           >linkedin.com/in/alexanderduya</a
         ><br />
         💻 GitHub:
-        <a
-          href="https://github.com/alexanderduya"
-          target="_blank"
-          rel="noopener noreferrer"
-          >github.com/alexanderduya</a
-        >
+        <a href="https://github.com/alexanderduya">github.com/alexanderduya</a>
       </p>
     </section>
 
     <footer>💻 Developed by Alexander Duya — Press Start 2P retro style</footer>
+    <script src="../src/script.js"></script>
   </body>
 </html>
