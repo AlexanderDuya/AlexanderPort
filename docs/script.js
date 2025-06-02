@@ -150,7 +150,9 @@ function drawSnake() {
   });
 }
 function changeDirection(event) {
-  event.preventDefault(); // so that page does not scroll
+  if ([LEFT, RIGHT, UP, DOWN].includes(keyPressed)) {
+    event.preventDefault(); // Prevent scrolling only for arrow keys
+  }
   const keyPressed = event.keyCode;
   const LEFT = 37;
   const RIGHT = 39;
