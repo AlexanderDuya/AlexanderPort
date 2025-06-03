@@ -150,15 +150,14 @@ function drawSnake() {
   });
 }
 function changeDirection(event) {
-  if ([LEFT, RIGHT, UP, DOWN].includes(keyPressed)) {
-    event.preventDefault(); // Prevent scrolling only for arrow keys
-  }
   const keyPressed = event.keyCode;
   const LEFT = 37;
   const RIGHT = 39;
   const UP = 38;
   const DOWN = 40;
-
+  if ([LEFT, RIGHT, UP, DOWN].includes(keyPressed)) {
+    event.preventDefault(); // Prevent scrolling only for arrow keys
+  }
   const goingUP = yVelocity == -unitSize;
   const goingDOWN = yVelocity == unitSize;
   const goingRIGHT = xVelocity == unitSize;
